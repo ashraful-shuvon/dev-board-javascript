@@ -42,7 +42,7 @@
                     <!-- <input id="" class="w-6 checked:bg-blue-700 checked:border-blue-700" type="checkbox" name=""
                         checked> -->
                     <img class="h-6" src="./assets/checkbox.png" alt="">
-                    <p class="text-3xl font-bold">10</p>
+                    <p id="total-task" class="text-3xl font-bold">10</p>
                 </div>
                 <div>
                     <div class="bg-blue-50 p-3 rounded-full">
@@ -69,7 +69,7 @@
                     </div>
                     <div>
                         <p class=" text-sm opacity-80">Task assigned</p>
-                        <h2 class="text-xl font-bold">06</h2>
+                        <h2 id="task" class="text-xl font-bold">06</h2>
                     </div>
                 </div>
                 <div class="col-span-2">
@@ -88,7 +88,7 @@
             </div>
 
             <!-- Board cards container-->
-            <div class="grid grid-cols-3 p-6 gap-7">
+            <div id="card-container" class="grid grid-cols-3 p-6 gap-7">
 
                 <!-- Card1 -->
                 <div class="card bg-blue-50 shadow-sm">
@@ -109,7 +109,8 @@
                                 <h2 class="text-sm font-medium">21 March, 2025</h2>
                             </div>
                             <div>
-                                <button class="btn btn-primary rounded-lg text-sm font-medium">Completed</button>
+                                <button
+                                    class="completed-btn btn btn-primary rounded-lg text-sm font-medium">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -133,7 +134,8 @@
                                 <h2 class="text-sm font-medium">21 March, 2025</h2>
                             </div>
                             <div>
-                                <button class="btn btn-primary rounded-lg text-sm font-medium">Completed</button>
+                                <button
+                                    class="completed-btn btn btn-primary rounded-lg text-sm font-medium">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -157,7 +159,8 @@
                                 <h2 class="text-sm font-medium">21 March, 2025</h2>
                             </div>
                             <div>
-                                <button class="btn btn-primary rounded-lg text-sm font-medium">Completed</button>
+                                <button
+                                    class="completed-btn btn btn-primary rounded-lg text-sm font-medium">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -182,7 +185,8 @@
                                 <h2 class="text-sm font-medium">21 March, 2025</h2>
                             </div>
                             <div>
-                                <button class="btn btn-primary rounded-lg text-sm font-medium">Completed</button>
+                                <button
+                                    class="completed-btn btn btn-primary rounded-lg text-sm font-medium">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -207,7 +211,8 @@
                                 <h2 class="text-sm font-medium">21 March, 2025</h2>
                             </div>
                             <div>
-                                <button class="btn btn-primary rounded-lg text-sm font-medium">Completed</button>
+                                <button
+                                    class="completed-btn btn btn-primary rounded-lg text-sm font-medium">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -232,7 +237,8 @@
                                 <h2 class="text-sm font-medium">21 March, 2025</h2>
                             </div>
                             <div>
-                                <button class="btn btn-primary rounded-lg text-sm font-medium">Completed</button>
+                                <button
+                                    class="completed-btn btn btn-primary rounded-lg text-sm font-medium">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -258,7 +264,9 @@
         </section>
     </main>
 
-    <script src="./utilities/currentDate.js"></script>
+    <script src="./script/currentDate.js"></script>
+    <script src="./script/completedTask.js"></script>
+    <script src="./utilities/utilities.js"></script>
 </body>
 
 </html>

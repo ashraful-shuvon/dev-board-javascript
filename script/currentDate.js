@@ -1,3 +1,10 @@
+const currentDateDiv = document.getElementById("currentDate");
+
+const textDiv = document.createElement("div");
+
+const p = document.createElement("p");
+const h1 = document.createElement("h1");
+
 const date = new Date();
 
 const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -23,14 +30,7 @@ const year = date.getFullYear();
 
 const dateText = `${month} ${day} ${year}`;
 
-const currentDateDiv = document.getElementById("currentDate");
-
-const textDiv = document.createElement("div");
-
-const p = document.createElement("p");
 p.textContent = `${weekday} ,`;
-
-const h1 = document.createElement("h1");
 h1.innerHTML = `${dateText}`;
 
 // Tailwind classes
