@@ -2,7 +2,7 @@ document
   .getElementById("card-container")
   .addEventListener("click", function (event) {
     const button = event.target;
-    console.log(button);
+    // console.log(button);
     if (button.classList.contains("completed-btn") && !button.disabled) {
       const assignedTask = getInnerText("task");
       const totalCompleted = getInnerText("total-task");
@@ -23,7 +23,6 @@ document
       // Activity log section
 
       let parent = button.parentElement;
-      console.log(parent);
       while (parent && !parent.classList.contains("card")) {
         parent = parent.parentElement;
       }
@@ -35,12 +34,16 @@ document
       //   }
       const container = document.getElementById("history-container");
       const p = document.createElement("p");
-      p.innerText = `You have successfully added ${title}.`;
+      const currentTime = new Date();
 
+      p.innerText = `You have successfully added ${title} at ${currentTime.toLocaleTimeString()}.`;
+
+      // tailwind class
       p.className = "bg-blue-50 rounded-lg p-2 m-4 text-sm";
+
       container.appendChild(p);
 
-      alert("Task completed");
+      alert("Board updated sucessfully.");
 
       if (assignedTask === 1) {
         alert("All the task have been completed.");
