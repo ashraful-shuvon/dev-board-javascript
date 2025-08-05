@@ -96,7 +96,8 @@
                         <div class="bg-white py-2 px-4 w-30 text-center rounded-lg">
                             <p>ShopEase</p>
                         </div>
-                        <h2 class="card-title font-medium text-xl py-2">Fix Mobile Button Issue</h2>
+                        <h2 id="card-title" class="card-title font-medium text-xl py-2">Fix Mobile Button Issue
+                        </h2>
                         <div class="bg-white p-4 rounded-lg mb-2">
                             <p class="line-clamp-2 opacity-50">Debug using Chrome DevTools, check for overlapping
                                 elements, and ensure onClick works properly
@@ -122,7 +123,7 @@
                         <div class="bg-white py-2 px-4 w-30 text-center rounded-lg">
                             <p>CloudSync</p>
                         </div>
-                        <h2 class="card-title font-medium text-xl py-2">Add Dark Mode</h2>
+                        <h2 id="card-title" class="card-title font-medium text-xl py-2">Add Dark Mode</h2>
                         <div class="bg-white p-4 rounded-lg mb-2">
                             <p class="line-clamp-2 opacity-50">Store the user's preference in localStorage, update CSS
                                 variables dynamically, and apply a smooth transition effect.
@@ -249,7 +250,7 @@
 
         <!-- History section -->
         <section class="bg-white rounded-2xl divide-y-2 divide-dashed divide-blue-100">
-            <div class="">
+            <div>
                 <div class="flex gap-3 justify-center items-center p-5">
                     <img src="./assets/activity.png" alt="">
                     <h2 class="text-xl font-medium">Activity log</h2>
@@ -258,7 +259,7 @@
                     <button class="btn btn-primary rounded-lg">Clear history</button>
                 </div>
             </div>
-            <div>
+            <div id="history-container">
 
             </div>
         </section>
@@ -267,6 +268,7 @@
     <script src="./script/currentDate.js"></script>
     <script src="./script/completedTask.js"></script>
     <script src="./utilities/utilities.js"></script>
+    <script src="./script/history.js"></script>
 </body>
 
 </html>
