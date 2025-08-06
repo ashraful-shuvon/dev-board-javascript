@@ -18,10 +18,6 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-<!-- <script src="https://cdn.tailwindcss.com"></script> -->
-
-<!-- font awesome
-    <script src="https://kit.fontawesome.com/7190c9305b.js" crossorigin="anonymous"></script> -->
 
 <style>
     .font-poppins {
@@ -53,40 +49,56 @@
                 <div class="collapse-title font-semibold">Question-1: What are the different ways to select an element
                     in the DOM?
                 </div>
-                <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the
-                    registration
-                    process.</div>
+                <div class="collapse-content text-sm">
+                    <p class="py-3">There are different ways of selecting an element in the DOM. They are used depending
+                        on the
+                        different scenarios. </p>
+                    <ol class="flex flex-col gap-2">
+                        <li>getElementById()</li>
+                        <li>getElementsByClassName()</li>
+                        <li>getElementsByTagName()</li>
+                        <li>querySelector()</li>
+                        <li>querySelectorAll()</li>
+                    </ol>
+                </div>
             </div>
             <div class="collapse collapse-arrow bg-base-100 border border-base-300">
                 <input type="radio" name="my-accordion-2" />
                 <div class="collapse-title font-semibold">Question-2: What is the difference between innerHTML,
                     innerText, and textContent ?
                 </div>
-                <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the
-                    instructions sent
-                    to your email.</div>
+                <div class="collapse-content text-sm">These are the properties of JavaScript. They are used to
+                    manipulate the HTML elements. But they are different from each other. <Strong>innerHTML</Strong>
+                    retrives, also can set the HTML elements, including tags. <strong>innerText</strong> only retrives
+                    and can set the main text of a HTML tag, ignoring HTML tags and hidden content. On the other hand,
+                    <strong>textContent</strong> can retrive all the text content including the hidden contents from
+                    inside of a HTML tag, but it ignores the HTML tag.
+                </div>
             </div>
             <div class="collapse collapse-arrow bg-base-100 border border-base-300">
                 <input type="radio" name="my-accordion-2" />
                 <div class="collapse-title font-semibold">Question-3: What is event delegation in the DOM?
                 </div>
-                <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make
-                    changes.</div>
+                <div class="collapse-content text-sm">Event delegation is a JavaScript technique which is used where a
+                    single event listener is attached to a parent node to handle the events from its child nodes.
+                    Instead of using event listener to every child node it utilizes the event bubbling technique to
+                    listen the events from its child nodes to parent node. </div>
             </div>
             <div class="collapse collapse-arrow bg-base-100 border border-base-300">
                 <input type="radio" name="my-accordion-2" />
                 <div class="collapse-title font-semibold">Question-4: What is event bubbling in the DOM?
                 </div>
-                <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make
-                    changes.</div>
+                <div class="collapse-content text-sm">Event Bubbling is an event in the DOM, it starts from the target
+                    element to its parents, then all its ancestors which are on
+                    the way from bottom to top, to the root node or parent.</div>
             </div>
             <div class="collapse collapse-arrow bg-base-100 border border-base-300">
                 <input type="radio" name="my-accordion-2" />
                 <div class="collapse-title font-semibold">Question-5: How do you create, add, and remove elements using
                     JavaScript?
                 </div>
-                <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make
-                    changes.</div>
+                <div class="collapse-content text-sm">Create element: document.createElement(tagName). Add element:
+                    parentNode.appendChild(childNode). Remove element: parentNode.removeChild(childNode)</div>
             </div>
         </section>
     </main>
